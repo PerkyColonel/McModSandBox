@@ -9,7 +9,8 @@
       "Bash(./gradlew:*)",
       "Bash(dir build)",
       "Bash(mkdir:*)",
-      "Bash(touch:*)"
+      "Bash(touch:*)",
+      "Bash(.gradlew:*)"
     ],
     "deny": []
   }

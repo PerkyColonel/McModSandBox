@@ -56,6 +56,10 @@ public class ExampleMod
     // Creates a powerful sword with 30 damage and 10 attack speed
     public static final RegistryObject<PowerSword> POWER_SWORD = ITEMS.register("power_sword", PowerSword::new);
 
+    // Creates a gigantic bread with high nutrition
+    public static final RegistryObject<Item> GIGANTIC_BREAD = ITEMS.register("gigantic_bread", () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
+            .nutrition(15).saturationModifier(1.2f).build())));
+
     // Creates a creative tab with the id "examplemod:example_tab" for the example item, that is placed after the combat tab
     public static final RegistryObject<CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
             .withTabsBefore(CreativeModeTabs.COMBAT)
@@ -63,6 +67,7 @@ public class ExampleMod
             .displayItems((parameters, output) -> {
                 output.accept(EXAMPLE_ITEM.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
                 output.accept(POWER_SWORD.get()); // Add the power sword to the tab
+                output.accept(GIGANTIC_BREAD.get()); // Add the gigantic bread to the tab
             }).build());
 
     public ExampleMod(FMLJavaModLoadingContext context)
@@ -100,6 +105,8 @@ public class ExampleMod
         LOGGER.info(Config.magicNumberIntroduction + Config.magicNumber);
 
         Config.items.forEach((item) -> LOGGER.info("ITEM >> {}", item.toString()));
+        
+        LOGGER.info("Registering GIGANTIC_BREAD: {}", GIGANTIC_BREAD.getId());
     }
 
     // Add the example block item to the building blocks tab

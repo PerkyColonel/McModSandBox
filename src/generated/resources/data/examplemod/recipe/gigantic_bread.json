@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:bread"
+    },
+    "W": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "BBB",
+    "WWW"
+  ],
+  "result": {
+    "count": 1,
+    "id": "examplemod:gigantic_bread"
+  }
+}

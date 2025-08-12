@@ -22,7 +22,7 @@ public class PowerSword extends SwordItem {
 
         @Override
         public float getAttackDamageBonus() {
-            return 29.0F; // Base damage (1 + 29 = 30 total damage)
+            return 0F; // Base damage (1 + 29 = 30 total damage)
         }
 
         @Override

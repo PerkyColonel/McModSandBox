@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "food",
+  "pattern": [
+    " B ",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:bread"
+    }
+  },
+  "result": {
+    "item": "examplemod:gigantic_bread",
+    "count": 1
+  }
+}
