@@ -10,7 +10,10 @@
       "Bash(dir build)",
       "Bash(mkdir:*)",
       "Bash(touch:*)",
-      "Bash(.gradlew:*)"
+      "Bash(.gradlew:*)",
+      "Bash(dir \"C:\\Users\\brama\\Desktop\\McModSandBox-master\\src\\main\\resources\\assets\\examplemod\\textures\\item\"\" /B)",
+      "Bash(dir srcmainresourcesassetsexamplemodtexturesitem)",
+      "Bash(timeout:*)"
     ],
     "deny": []
   }

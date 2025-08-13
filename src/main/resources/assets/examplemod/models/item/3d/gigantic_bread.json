@@ -1,0 +1,42 @@
+{
+  "parent": "examplemod:item/3d/gigantic_bread_3d",
+"display": {
+		"thirdperson_righthand": {
+			"rotation": [60, 84, 4],
+			"translation": [-4.25, 3.25, 2.5]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [56, 84, 4],
+			"translation": [-5, -0.75, 2.5]
+		},
+		"firstperson_righthand": {
+			"rotation": [101, 0, 0],
+			"translation": [-0.75, 3.75, 1.5]
+		},
+		"firstperson_lefthand": {
+			"rotation": [101, 0, 0],
+			"translation": [-0.75, 3.75, 1.5]
+		},
+		"ground": {
+			"translation": [0, 18, 0],
+			"scale": [4, 4, 4]
+		},
+		"gui": {
+			"rotation": [0, 97, 0],
+			"scale": [4, 4, 4]
+		},
+		"fixed": {
+			"rotation": [0, 90, 0],
+			"translation": [0, 0, -5.5],
+			"scale": [4, 4, 4]
+		}
+	},
+	"groups": [
+		{
+			"name": "group",
+			"origin": [5, 14, 17],
+			"color": 0,
+			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+		}
+	]
+}
